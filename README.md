@@ -192,3 +192,10 @@ This project can be extended with more advanced features:
   * **Database**: SQLite with Entity Framework Core
   * **AI**: Google Gemini Pro
   * **Frontend**: Razor Pages, HTML, CSS
+
+<img width="1108" height="586" alt="Screenshot 2025-07-25 013421" src="https://github.com/user-attachments/assets/e231bf41-5915-4379-95bb-fb95c1fe6332" />
+<img width="1138" height="570" alt="Screenshot 2025-07-25 013405" src="https://github.com/user-attachments/assets/bc56acdf-817c-47f6-8d67-0d8c112ae569" />
+<img width="818" height="480" alt="Screenshot 2025-07-25 013350" src="https://github.com/user-attachments/assets/69cc6577-aa8d-4a28-a45d-90ec7e965c05" />
+<img width="895" height="657" alt="Screenshot 2025-07-25 012109" src="https://github.com/user-attachments/assets/1570c446-eba2-4059-8d28-5f4de5e27392" />
+<img width="1121" height="582" alt="Screenshot 2025-07-25 013444" src="https://github.com/user-attachments/assets/368a0bf8-a71c-4da7-8de9-7e30719f4c2b" />
+

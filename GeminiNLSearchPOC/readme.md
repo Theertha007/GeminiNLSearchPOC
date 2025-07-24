@@ -1,7 +1,3 @@
-Of course. Here is the provided content converted into a well-structured `README.md` file format.
-
------
-
 # 🤖 Natural Language Database Search with Google Gemini AI
 
 A Proof of Concept (POC) demonstrating how to use Google Gemini AI to convert natural language into SQL queries, allowing users to search a database using conversational language.

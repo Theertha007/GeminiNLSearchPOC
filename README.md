@@ -193,6 +193,22 @@ This project can be extended with more advanced features:
   * **AI**: Google Gemini Pro
   * **Frontend**: Razor Pages, HTML, CSS
 
+<img width="1357" height="707" alt="image" src="https://github.com/user-attachments/assets/c7dfd871-5b64-4457-9e65-daafd26a6959" />
+<img width="1097" height="517" alt="image" src="https://github.com/user-attachments/assets/88077673-08d7-4384-958b-5378bb80e5e7" />
+
+<img width="1045" height="633" alt="image" src="https://github.com/user-attachments/assets/d6fa4f88-ec30-4cbf-b3c0-83337654b69e" />
+<img width="1376" height="666" alt="image" src="https://github.com/user-attachments/assets/7b61884e-ab3f-40f9-a88c-d19fc98efee9" />
+
+<img width="1410" height="636" alt="image" src="https://github.com/user-attachments/assets/07d90024-5529-4d2b-a00f-29deb354c4eb" />
+
+<img width="1413" height="602" alt="image" src="https://github.com/user-attachments/assets/0daa9f7c-4e47-4179-a775-0f94c0da16e4" />
+
+<img width="1377" height="611" alt="image" src="https://github.com/user-attachments/assets/412b32d9-9928-4f03-834c-6bb92b36c55a" />
+
+
+
+
+
 <img width="1108" height="586" alt="Screenshot 2025-07-25 013421" src="https://github.com/user-attachments/assets/e231bf41-5915-4379-95bb-fb95c1fe6332" />
 <img width="1138" height="570" alt="Screenshot 2025-07-25 013405" src="https://github.com/user-attachments/assets/bc56acdf-817c-47f6-8d67-0d8c112ae569" />
 <img width="818" height="480" alt="Screenshot 2025-07-25 013350" src="https://github.com/user-attachments/assets/69cc6577-aa8d-4a28-a45d-90ec7e965c05" />

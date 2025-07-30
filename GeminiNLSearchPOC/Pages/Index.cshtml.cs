@@ -8,12 +8,15 @@ using System.Text.RegularExpressions;
 public class IndexModel : PageModel
 {
     private readonly AppDbContext _context;
-    private readonly IGeminiService _geminiService;
+    //private readonly IGeminiService _geminiService;
+    private readonly INaturalLanguageQueryBuilder _queryBuilder;
 
-    public IndexModel(AppDbContext context, IGeminiService geminiService)
+    public IndexModel(AppDbContext context, INaturalLanguageQueryBuilder queryBuilder) //IGeminiService geminiService
     {
         _context = context;
-        _geminiService = geminiService;
+        //_geminiService = geminiService;
+        _queryBuilder = queryBuilder;
+
     }
 
     public IList<Document> Documents { get; set; } = new List<Document>();
@@ -39,11 +42,11 @@ public class IndexModel : PageModel
         try
         {
             // Get SQL from Gemini AI
-            SqlQuery = await _geminiService.GenerateSqlQueryAsync(query);
+            SqlQuery = await _queryBuilder.GenerateSqlQueryAsync(query);
             
             // Clean the SQL query (remove markdown formatting)
             var cleanedSql = CleanSqlQuery(SqlQuery);
-            Message = $"Processed query: '{query}'";
+            Message = $"User Input Text: '{query}'";
 
             // Execute the cleaned SQL query
             Documents = await _context.Documents.FromSqlRaw(cleanedSql).ToListAsync();

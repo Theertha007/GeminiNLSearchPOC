@@ -4,7 +4,8 @@
     ViewData["Title"] = "Gemini NL Search";
 }
 
-<div style="max-width: 800px; margin: 20px auto; padding: 20px; font-family: Arial, sans-serif;">
+
+<div style="max-width: 800px; margin: 20px auto; padding: 20px; font-family: Arial, sans-serif; background-color: #f8f9fa;">
     <h2 style="color: #333;">Gemini AI Natural Language Search</h2>
     <p style="color: #666;">Enter natural language queries to search documents</p>
     
@@ -18,12 +19,12 @@
         </div>
     </form>
 
-    @if (!string.IsNullOrEmpty(Model.Message))
+    @*@if (!string.IsNullOrEmpty(Model.Message))
     {
         <div style="padding: 15px; background: #e8f0fe; border-radius: 4px; margin: 15px 0; border-left: 4px solid #4285f4;">
             <strong>@Model.Message</strong>
         </div>
-    }
+    }*@
 
     @if (!string.IsNullOrEmpty(Model.SqlQuery))
     {

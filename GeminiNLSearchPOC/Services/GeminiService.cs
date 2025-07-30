@@ -25,15 +25,41 @@ namespace GeminiNLSearchPOC.Services
             var url = $"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={_apiKey}";
 
             var prompt = $@"
-You are a SQL expert. Convert the following natural language query to a valid SQL query for a table named 'Documents' with these columns:
-- Id (int)
-- Title (string)
-- EscrowOfficer (string)
-- CreatedDate (datetime)
-- FileName (string)
+You are an expert SQL developer working with a SQLite database. Convert the following natural language query to a valid SQLite query.
 
-Return ONLY the SQL query with no explanations or formatting. Make sure it's valid SQLite syntax.
+DATABASE SCHEMA:
+Table: Documents
+Columns:
+- Id (INTEGER, primary key)
+- Title (TEXT)
+- EscrowOfficer (TEXT)
+- CreatedDate (DATETIME)
+- FileName (TEXT)
 
+IMPORTANT RULES:
+1. Return ONLY the SQL query, no explanations
+2. Use SQLite syntax (e.g., date functions like strftime)
+3. Always use SELECT statements
+4. Never include DELETE, UPDATE, INSERT, DROP, or ALTER
+5. Make sure the query is safe and valid
+6. Use proper column names as shown above
+7. For date comparisons, use strftime function
+8. Return all columns in the SELECT statement
+
+EXAMPLES:
+User: Show me all records from November 2025
+SQL: SELECT * FROM Documents WHERE strftime('%Y-%m', CreatedDate) = '2025-11';
+
+User: Find records by officer abc
+SQL: SELECT * FROM Documents WHERE EscrowOfficer = 'abc';
+
+User: Show files from last 30 days
+SQL: SELECT * FROM Documents WHERE CreatedDate >= date('now', '-30 days');
+
+User: Show records by xyz last month
+SQL: SELECT * FROM Documents WHERE EscrowOfficer = 'xyz' AND strftime('%Y-%m', CreatedDate) = strftime('%Y-%m', 'now', '-1 month');
+
+Now convert this query:
 Natural language query: {naturalLanguageQuery}";
 
             var requestBody = new
